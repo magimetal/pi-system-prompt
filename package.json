@@ -1,0 +1,54 @@
+{
+	"name": "pi-system-prompt",
+	"version": "0.1.0",
+	"description": "GitHub-installable Pi package exposing /system-prompt for current session prompt inspection.",
+	"type": "module",
+	"license": "MIT",
+	"author": "Magi Metal",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"pi-coding-agent",
+		"system-prompt",
+		"prompt-inspection"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/magimetal/pi-system-prompt.git"
+	},
+	"homepage": "https://github.com/magimetal/pi-system-prompt",
+	"bugs": {
+		"url": "https://github.com/magimetal/pi-system-prompt/issues"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"files": [
+		"extensions",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"test": "vitest --run",
+		"typecheck": "tsc --noEmit",
+		"check": "npm run typecheck && npm test"
+	},
+	"pi": {
+		"extensions": [
+			"./extensions/system-prompt.ts"
+		]
+	},
+	"peerDependencies": {
+		"@mariozechner/pi-coding-agent": "*"
+	},
+	"devDependencies": {
+		"@mariozechner/pi-coding-agent": "0.68.0",
+		"@types/node": "25.6.0",
+		"typescript": "6.0.3",
+		"vitest": "4.1.0"
+	}
+}
