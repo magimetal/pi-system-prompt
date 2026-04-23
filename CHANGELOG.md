@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- Audited package against `@mariozechner/pi-coding-agent` `0.69.0` breaking changes. No runtime code changes required because package does not import `@sinclair/typebox`, `typebox`, or use session-replacement APIs like `ctx.newSession()`, `ctx.fork()`, or `ctx.switchSession()`.
+- Bumped local development and test dependency from `@mariozechner/pi-coding-agent` `0.68.0` to `0.69.0` so typecheck and Vitest run against current extension runtime.
+
 ## [0.1.0] - 2026-04-21
 
 ### Added
