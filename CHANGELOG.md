@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- Migrated Pi coding agent package references from `@mariozechner/pi-coding-agent` `0.69.0` to `@earendil-works/pi-coding-agent` `0.74.0`, including peer dependency, development dependency, lockfile, and extension type import.
 - Audited package against `@mariozechner/pi-coding-agent` `0.69.0` breaking changes. No runtime code changes required because package does not import `@sinclair/typebox`, `typebox`, or use session-replacement APIs like `ctx.newSession()`, `ctx.fork()`, or `ctx.switchSession()`.
 - Bumped local development and test dependency from `@mariozechner/pi-coding-agent` `0.68.0` to `0.69.0` so typecheck and Vitest run against current extension runtime.
 
